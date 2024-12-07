@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+#meusprojetos2 {
+    width: 90vw;
+    height: 90vh;
+    background-color: #fafafa;
+    margin: 0px auto;
+    margin-top:30px ;
+    border-radius: 20px;
+    padding: 10px;
+    
+    
+}
+
+
+
+#slider {
+    width: 80%;
+    max-width: 500px;
+    height: 25vw;
+    max-height: 150px;
+    position: relative;
+    object-fit: cover;
+    justify-items: center;
+}
+
+
+
+#slider img {
+    opacity: 0;
+    position: absolute;
+    width: 85vw;
+    height: 40vh;
+    transition: opacity 2000ms;
+    border: 1px solid rgb(172, 144, 6);
+    border-radius: 10px;    
+    
+}
+
+#slider img.selected{
+    opacity: 1;
+}

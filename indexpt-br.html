@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    
+</head>
+<body id="corpo">
+    <header>
+        <nav id="telanav1">
+            <a href="#1"><abbr title="Sobre mim"><i class="material-icons" id="menu">assignment_ind</i></abbr></a>
+            <a href="#2"><abbr title="Meus projetos"><i class="material-icons" id="menu">library_books</i></abbr></a>
+
+            <a href="#3"><abbr title="Contato"><i class="material-icons" id="menu2">email</i></abbr></a>
+        </nav>
+        <nav id="telanav2">
+            <a href="#1">SOBRE MIM</a>
+            <a href="#2">MEUS PROJETOS</a>
+
+            <a href="#3" id="telamenu">MINHAS REDES SOCIAIS</a>
+        </nav>
+       
+    </header>
+    <main>
+        <section>
+            <h1 id="titulo" class="animate__animated">Desenvolvedor <br>Front-End</h1>
+            <p>SOU DESENVOLVEDOR FRONT-END E DESIGNER EM BUSCA DE APRIMORAR E APLICAR MEUS CONHECIMENTOS. INICIEI MINHA CARREIRA A POUCO TEMPO, MAS TIVE DEDICAÇÃO TOTAL NESSES QUASE DOIS ANOS. ADORO DESIGN MINIMALISTA, DIVERTIDOS E/OU PROFISSIONAIS. ADORO ANIMAIS, TECNOLOGIA E ARTE.</p>
+        </section>
+
+        <div id="1" style="position: relative; top: -40px; height: 1px; background-color: transparent;">
+
+        </div>
+
+        <section id="sobremim">
+            <h1>Sobre mim</h1>
+            <img src="img/eu.jpeg" alt="desenho matheus" id="perfil" onmouseover="mudarback()" onmouseout="voltarback()" onclick="alternarback()">
+            <p id="incom">Olá! Meu nome é Matheus Martins, e sou um desenvolvedor web com 2 anos de experiência focado em criar sites modernos, funcionais e adaptáveis.</p>
+            <p id="completo">Olá! Meu nome é Matheus Martins, e sou um desenvolvedor web com 2 anos de experiência focado em criar sites modernos, funcionais e adaptáveis. Minha especialidade é o desenvolvimento de landing pages que combinam estética e desempenho, sempre garantindo que os sites sejam responsivos e funcionem perfeitamente nos tipos de tela mais populares. Também gosto de explorar criatividade ao criar sites temáticos, transformando ideias únicas em experiências digitais cativantes. Com habilidades em HTML, CSS, JavaScript, Bootstrap e design gráfico, estou sempre buscando aprender e evoluir para entregar soluções de alta qualidade.</p>
+            <div id="vermais" onclick="verm()">
+                <i class="material-icons" id="arrowup">arrow_drop_up</i>
+                <p id="vertext">VER MAIS</p>
+                <i class="material-icons" id="arrowdown">arrow_drop_down</i>
+            </div>
+        </section>
+
+        <div id="2" style="position: relative; top: -40px; height: 1px; background-color: transparent;"></div>
+
+        </div>
+
+        <section id="meusprojetos">
+            <h1>Meus projetos</h1>
+            <p id="aviso">Clique no Botão ou no logo para ir para o site.</p>
+            <div id="projetos">
+                <div id="projeto1">
+                    
+                 <button class="hair">
+                    <a href="https://mattyns.github.io/hairbook/" target="_blank">Hairbook</a>
+                    <div class="hairbook">
+                        <a href="https://mattyns.github.io/hairbook/" target="_blank">
+                            <div></div>
+                            <p>
+                                Hairbook é um simulador de uma rede social parecida com o Facebook usada apenas como objeto de estudo.
+                            </p>
+                        
+                        </a>
+                    </div>
+                </button>
+                    
+                    
+
+                </div>
+                <div id="projeto2">
+
+                    <button class="barb">
+                        <a href="https://mattyns.github.io/Barber/" target="_blank">Barber Sparta</a>
+                        <div class="barber">
+                            <a href="https://mattyns.github.io/Barber/" target="_blank">
+                                <div id="imghair"></div>
+                                <p>
+                                    Barber Sparta é um projeto pensado para uma barbearia.
+                                </p>
+                            
+                            </a>
+                        </div>
+                    </button>
+                    
+
+
+                </div>
+                <div id="projetos3">
+
+                    <button class="osab">
+                        <a href="https://mattyns.github.io/Osabor/" target="_blank">Osabor</a>
+                        <div class="osabor">
+                            <a href="https://mattyns.github.io/Osabor/" target="_blank">
+                                <div id="imghair"></div>
+                                <p>
+                                    Osabor é um site pensado para um restaurante, o mesmo modelo pode se aplicar a cafeterias e lanchonetes.
+                                </p>
+                            
+                            </a>
+                        </div>
+                    </button>
+        
+                </div>
+                <div id="projeto4">
+                    <button class="divi">
+                        <a href="https://mattyns.github.io/divina/" target="_blank">Divina Comédia</a>
+                        <div class="divina">
+                            <a href="https://mattyns.github.io/divina/" target="_blank">
+                                <div id="imghair"></div>
+                                <p>
+                                   Um projeto feito apenas para estudo de posicionamento de background, ele tem um trecho do livro Divina comédia.
+                                </p>
+                            
+                            </a>
+                        </div>
+                    </button>
+
+
+                    
+
+                </div>
+               
+            </div>
+            
+                
+
+            
+
+            <a href="meusprojetos.html"><h2 id="teste">Ou clique aqui para ver mais detalhes</h2></a>
+
+            
+
+        </section>
+
+        <div id="3" style="position: relative; top: -40px; height: 1px; background-color: transparent;"></div>
+
+        </div>
+
+        
+        <section id="redessociais">
+            <h1>Minhas Redes Sociais</h1>
+            <div id="redes">
+                <a href="https://wa.me/message/FFJ4LAFTHM7TA1" target="_blank"><img src="img/whats.png" alt="Meu Whatsapp"></a>
+                <a href="https://www.instagram.com/math.ever/" target="_blank"><img src="img/insta.jpg" alt="Meu Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100074589230685" target="_blank"><img src="img/face.jpg" alt="Meu Facebook"></a>
+            </div>
+
+
+        </section>
+        
+
+        <div id="navigatortop">
+            <a href="#"><i class="material-icons">keyboard_arrow_up</i></a>
+    
+        </div>
+
+
+    </main>
+
+    <script src="Script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+    
+    
+</body>
+</html>

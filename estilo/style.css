@@ -574,6 +574,22 @@ button {
     color: white;
 }
 
+.anjo {
+    width: 1px;
+}
+
+#anjinho {
+    
+    width: 200px;
+    margin-left: -50px;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+
+#anjinho:hover {
+    width: 210px;
+}
+
 @media screen and (min-Width:845px) {
 
     nav{

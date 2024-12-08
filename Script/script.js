@@ -76,20 +76,22 @@ function vermenos() {
 
 const div = document.querySelector('#titulo');
 
-div.addEventListener('mouseover', () => {
-  // Primeira animação ao passar o mouse
-  div.classList.add('animate__hinge');
+    div.addEventListener('click', () => {
+      // Adiciona a primeira animação (hinge)
+      div.classList.add('animate__hinge');
 
-  // Após a primeira animação terminar
-  div.addEventListener('animationend', () => {
-    if (div.classList.contains('animate__hinge')) {
-      div.classList.remove('animate__hinge'); // Remove a primeira animação
-      div.classList.add('animate__backInDown');   // Adiciona a próxima animação
-    }
-  }, { once: true }); // Garantir que o evento seja executado apenas uma vez
-});
+      // Quando a primeira animação termina
+      div.addEventListener('animationend', () => {
+        if (div.classList.contains('animate__hinge')) {
+          div.classList.remove('animate__hinge'); // Remove a primeira animação
+          div.classList.add('animate__bounceInDown'); // Adiciona a segunda animação
+        }
+      }, { once: true }); // Garante que o evento seja disparado apenas uma vez
+    });
 
-// Reset para evitar problemas em animações futuras
-div.addEventListener('mouseleave', () => {
-  div.classList.remove('animate__hinge', 'animate__backInDown');
-});
+    // Opcional: Reset das animações para permitir repetição
+    div.addEventListener('animationend', () => {
+      if (div.classList.contains('animate__bounceInDown')) {
+        div.classList.remove('animate__bounceInDown'); // Remove a segunda animação
+      }
+    });

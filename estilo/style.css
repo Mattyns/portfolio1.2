@@ -139,7 +139,8 @@ main > section > p {
     margin-top: 30px;
     border-radius: 20px;
     padding: 10px;
-    height: max-content;
+    height: 95vw;
+    transition: height 1s ease;
 
 }
 
@@ -157,6 +158,7 @@ main > section > p {
     padding: 5px;
     color: white;
     font-family:var(--font5) , Verdana, sans-serif;
+    transition:height 1s ease;
 }
 
 
@@ -183,6 +185,7 @@ main > section > p {
     width: 100%;
     cursor: pointer;
     display: grid;
+    transition: margin-top 0.1s ease;
     
     
 }

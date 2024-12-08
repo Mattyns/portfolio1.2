@@ -33,6 +33,7 @@ function verm() {
     var vertext = document.getElementById('vertext')
     var arrowup = document.getElementById('arrowup')
     var arrowdown = document.getElementById('arrowdown')
+    var sm = document.getElementById('sobremim')
 
 
     incom.style.visibility = 'hidden'
@@ -40,7 +41,8 @@ function verm() {
     incom.style.margin= '0px'
     incom.style.height = '0px'
     completo.style.visibility = 'visible'
-    completo.style.height = 'fit-content'
+    completo.style.height = '500px'
+    sm.style.height = '650px'
     vertext.innerText = 'VER MENOS'
     arrowdown.style.display = 'none'
     arrowup.style.display = 'block'
@@ -70,6 +72,8 @@ function vermenos() {
     ver.setAttribute('onclick', "verm()");
 
 }
+
+
 
 
 

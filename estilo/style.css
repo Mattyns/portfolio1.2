@@ -253,7 +253,7 @@ faça usando javascript
 
 #meusprojetos {
     justify-items: center;
-    width: 70vw;
+    width: 90vw;
     background-color: #3e2f259c;
     margin: 0px auto;
     margin-top:30px ;
@@ -269,265 +269,92 @@ faça usando javascript
     padding: 10px;
 }
 
-#meusprojetos > a {
-    color: rgb(222, 219, 219);
-    font-family: grande2, 'Courier New', Courier, monospace;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-
-}
-
-#meusprojetos > a:hover {
-    color:rgb(172, 144, 6) ;
-
-}
-
-
-
-#aviso {
-    width: auto;
-    text-indent:0px ;
-    color: rgb(209, 202, 202);
-    padding: 10px;
-    margin: 0px;
-    margin-bottom: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-}
-
-#projetos {
+.sec1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    
-    
+    grid-template-columns: 1fr 1fr 1fr;
     
     
     
 }
 
-#projetos > div {
-    padding: 10px;
+.sec img {
+    width: 80px;
+    align-content: space-between;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+    opacity: 1; /* Opacidade total inicialmente */
+    cursor: pointer;
+    border: 2px solid black;
     
 }
 
+.sec img:hover {
+    opacity: 0.5;
+    width: 85px;
+    margin: 0px 8px;
+}
 
+#select {
+    border: 2px solid gainsboro !important; 
+    width: 85px !important;
+    margin: 0px 8px !important;
+}
 
-#imgprojeto {
+.mostrarimg {
+    margin-top: 20px;
+    background-color:#3e2f25ff;
+    width: 80%;
+    border-radius: 20px 20px 20px 20px;
+    padding-bottom: 10px;
+}
+
+.mostrarimg  img {
     width: 100%;
-    background-color: #ffffff;
-    border-radius: 25%;
-    margin: 0px;
-    
-    
-}
-
-button {
-    border: 0;
-    padding: 0;
-    border-radius: 10px;
-    background-color: red;
-    width: 140px;
-    padding: 10px;
-    
-}
-
-
-
-.hairbook {
-    display: none;
-    width: 0px;
-    height: 0px;
-}
-
-
-.hair:hover > .hairbook {
-    display: block;
-   
-    
-    
-}
-
-
-
-.hair > div {
-    width: 250px;
-    height: 400px;
-    background-image: url('../img/s3.png');
-    background-size: cover;
-    background-position: center top;
-    position: absolute;
-    border:3px solid red;
-    border-radius: 10px;
-   
-
-}
-
-
-
-
-
-
-.hair > a {
-    background-color: Red;
-    color: white;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-}
-
-.hairbook  p {
-    width: 100%;
+    display: flex;
     margin: auto;
-    position: relative;
-    background-color: red;
-    border:3px solid red;
-    border-radius: 10px;
-    color: white;
-    top: 102%;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid gainsboro;
+}
+
+.mostrarimg h2 {
+    color: black;
+    background-color:rgb(79, 56, 6) ;
+    padding: 5px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.mostrarimg p {
+    color: #000;
+    font-family: var(--font5);
+    padding: 0px 10px;
     
 }
 
-.barber {
+#verdemo {
+    width: fit-content;
+    background-color: rgba(220, 220, 220, 0.585);
+    color:#2c221b ;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#verdemo:hover {
+    background-color: rgb(220, 220, 220);
+    color:rgb(79, 56, 6) ;
+}
+
+#divinacard {
     display: none;
 }
 
 
-
-.barb:hover > .barber {
-    display: block;
-}
-
-
-
-.barb > div {
-    width: 250px;
-    height: 400px;
-    background-image: url('../img/s1.png');
-    background-size: cover;
-    background-position: center top;
-    position: absolute;
-    border:3px solid red;
-    border-radius: 10px;
-    left: 10vw;
-   
-
-}
-
-.barb > a {
-    background-color: Red;
-    color: white;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.barber  p {
-    width: 100%;
-    margin: auto;
-    position: relative;
-    background-color: red;
-    border:3px solid red;
-    border-radius: 10px;
-    color: white;
-    top: 102%;
-    
-}
-
-
-.osabor {
-    display: none;
-}
-
-
-
-.osab:hover > .osabor {
-    display: block;
-}
-
-
-
-.osab > div {
-    width: 250px;
-    height: 400px;
-    background-image: url('../img/s2.png');
-    background-size: cover;
-    background-position: center top;
-    position: absolute;
-    border:3px solid red;
-    border-radius: 10px;
-    
-   
-
-}
-
-.osab > a {
-    background-color: Red;
-    color: white;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.osabor  p {
-    width: 100%;
-    margin: auto;
-    position: relative;
-    background-color: red;
-    border:3px solid red;
-    border-radius: 10px;
-    color: white;
-    top: 102%;
-    
-}
-
-.divina {
-    display: none;
-}
-
-
-
-.divi:hover > .divina {
-    display: block;
-}
-
-
-
-.divi > div {
-    width: 250px;
-    height: 400px;
-    background-image: url('../img/s4.png');
-    background-size: cover;
-    background-position: center top;
-    position: absolute;
-    border:3px solid red;
-    border-radius: 10px;
-    left: 10vw;
-   
-
-}
-
-.divi > a {
-    background-color: Red;
-    color: white;
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.divina  p {
-    width: 100%;
-    margin: auto;
-    position: relative;
-    background-color: red;
-    border:3px solid red;
-    border-radius: 10px;
-    color: white;
-    top: 102%;
-    
-}
 
 
 
@@ -654,50 +481,10 @@ button {
         text-align: center;
     }
 
-    #aviso {
-        text-align: center;
-    }
 
-    #projetos {
-        gap: 0px;
-        width: fit-content;
-        margin: auto;
-    }
-
-    #projetos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-    }
-
-    .barb > div {
-        left: auto;
-    }
-
-    .divi > div {
-        left: auto;
-    }
-
-    #projeto4:nth-child(4) {
-        grid-column: 2 / 3; /* Faz a última div ocupar a coluna do meio */
-      }
-        
-        
-        
     }
 
 
-    
-    
-
-
-
-    
-
-   
-
-    
 
 
 
@@ -729,25 +516,5 @@ button {
     }
 
     
-    #projetos {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-        
-        
-        
-        
-    }
-
-    #projeto4:nth-child(4) {
-        grid-column: auto
-      }
-    
-
-   
-
-   
-
     
 }

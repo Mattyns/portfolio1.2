@@ -98,3 +98,36 @@ const div = document.querySelector('#titulo');
         div.classList.remove('animate__bounceInDown'); // Remove a segunda animação
       }
     });
+
+
+
+
+    // Meus projetos 
+
+    function divina() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+
+      barbers.removeAttribute('id', 'select')
+      divina.setAttribute('id', 'select')
+
+      barberscard.style.display = 'none'
+      divinacard.style.display = 'block'
+    }
+
+    function barbers() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+
+      divina.removeAttribute('id', 'select')
+      barbers.setAttribute('id', 'select')
+
+      barberscard.style.display = 'block'
+      divinacard.style.display = 'none'
+    }

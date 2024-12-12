@@ -319,7 +319,7 @@ faça usando javascript
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -moz-overflow-scrolling: touch;
-    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 

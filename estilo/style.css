@@ -269,16 +269,35 @@ faça usando javascript
     padding: 10px;
 }
 
+
+
 .sec1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
     
     
 }
 
+.sec2 {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.sec  i {
+    width: fit-content;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#setaleft {
+    margin-left: auto;
+}
+
 .sec img {
-    width: 80px;
+    width: 65px;
     align-content: space-between;
     margin: 0px 10px;
     border-radius: 20px;
@@ -291,15 +310,26 @@ faça usando javascript
 
 .sec img:hover {
     opacity: 0.5;
-    width: 85px;
+    width: 70px;
     margin: 0px 8px;
 }
 
 #select {
     border: 2px solid gainsboro !important; 
-    width: 85px !important;
+    width: 70px !important;
     margin: 0px 8px !important;
 }
+
+.projs {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+}
+
+
 
 .mostrarimg {
     margin-top: 20px;
@@ -350,7 +380,11 @@ faça usando javascript
     color:rgb(79, 56, 6) ;
 }
 
-#divinacard {
+#barberscard {
+    display: block;
+}
+
+.mostrarimg > div {
     display: none;
 }
 

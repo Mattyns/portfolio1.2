@@ -107,27 +107,95 @@ const div = document.querySelector('#titulo');
     function divina() {
       var barbers = document.querySelector('.barbers')
       var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
       
       var barberscard = document.getElementById('barberscard')
       var divinacard = document.getElementById('divinacard')
+      var haircard = document.getElementById('haircard')
 
+      hair.removeAttribute('id', 'select')
       barbers.removeAttribute('id', 'select')
       divina.setAttribute('id', 'select')
-
+      
+      haircard.style.display = 'none'
       barberscard.style.display = 'none'
       divinacard.style.display = 'block'
+      
+
+      divinacard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      divinacard.addEventListener('animationend', () => {
+        divinacard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
     }
 
     function barbers() {
       var barbers = document.querySelector('.barbers')
       var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
       
       var barberscard = document.getElementById('barberscard')
       var divinacard = document.getElementById('divinacard')
-
+      var haircard = document.getElementById('haircard')
+      
+      hair.removeAttribute('id', 'select')
       divina.removeAttribute('id', 'select')
       barbers.setAttribute('id', 'select')
 
       barberscard.style.display = 'block'
       divinacard.style.display = 'none'
+      haircard.style.display = 'none'
+
+      barberscard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      barberscard.addEventListener('animationend', () => {
+        barberscard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
+    }
+
+    function hair() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+      var haircard = document.getElementById('haircard')
+      
+      barbers.removeAttribute('id', 'select')
+      divina.removeAttribute('id', 'select')
+      hair.setAttribute('id', 'select')
+
+      barberscard.style.display = 'none'
+      divinacard.style.display = 'none'
+      haircard.style.display = 'block'
+
+      haircard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      haircard.addEventListener('animationend', () => {
+        haircard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
+    }
+
+
+    function psec2() {
+      var sec1 = document.querySelector('.sec1')
+      var sec2 = document.querySelector('.sec2')
+
+      sec1.style.display = 'none'
+      sec2.style.display = 'grid'
+    }
+
+    function psec1() {
+      var sec1 = document.querySelector('.sec1')
+      var sec2 = document.querySelector('.sec2')
+
+      sec2.style.display = 'none'
+      sec1.style.display = 'grid'
     }

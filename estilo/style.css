@@ -271,18 +271,7 @@ faça usando javascript
 
 
 
-.sec1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    
-    
-    
-}
 
-.sec2 {
-    display: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
 
 .sec  i {
     width: fit-content;
@@ -292,9 +281,7 @@ faça usando javascript
     cursor: pointer;
 }
 
-#setaleft {
-    margin-left: auto;
-}
+
 
 .sec img {
     width: 65px;
@@ -320,8 +307,13 @@ faça usando javascript
     margin: 0px 8px !important;
 }
 
+.sec {
+    width: 100%;
+   
+}
+
 .projs {
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     overflow-x: auto;

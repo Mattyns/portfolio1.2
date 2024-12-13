@@ -102,6 +102,16 @@ i#menu2 {
     padding: 0px 5px;
     float: right;
     cursor: pointer;
+    margin-left: 0px;
+}
+
+#menu3 {
+    width: 33px;
+    border-radius: 50%;
+    padding: 0px 5px;
+    margin-left: 50px;
+    float: right;
+    cursor: pointer;
 }
 
 main {

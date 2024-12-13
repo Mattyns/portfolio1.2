@@ -108,15 +108,30 @@ const div = document.querySelector('#titulo');
       var barbers = document.querySelector('.barbers')
       var divina = document.querySelector('.divina')
       var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
+
+
       
       var barberscard = document.getElementById('barberscard')
       var divinacard = document.getElementById('divinacard')
       var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
 
+      vivafloresta.removeAttribute('id', 'select')
+      osabor.removeAttribute('id', 'select')
+      nail.removeAttribute('id', 'select')
       hair.removeAttribute('id', 'select')
       barbers.removeAttribute('id', 'select')
       divina.setAttribute('id', 'select')
       
+
+      vivaflorestacard.style.display = 'none'
+      osaborcard.style.display = 'none'
+      nailcard.style.display = 'none'
       haircard.style.display = 'none'
       barberscard.style.display = 'none'
       divinacard.style.display = 'block'
@@ -135,15 +150,28 @@ const div = document.querySelector('#titulo');
       var barbers = document.querySelector('.barbers')
       var divina = document.querySelector('.divina')
       var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
       
       var barberscard = document.getElementById('barberscard')
       var divinacard = document.getElementById('divinacard')
       var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
       
+
+      vivafloresta.removeAttribute('id', 'select')
+      osabor.removeAttribute('id', 'select')
+      nail.removeAttribute('id', 'select')
       hair.removeAttribute('id', 'select')
       divina.removeAttribute('id', 'select')
       barbers.setAttribute('id', 'select')
 
+      vivaflorestacard.style.display = 'none'
+      osaborcard.style.display = 'none'
+      nailcard.style.display = 'none'
       barberscard.style.display = 'block'
       divinacard.style.display = 'none'
       haircard.style.display = 'none'
@@ -157,19 +185,34 @@ const div = document.querySelector('#titulo');
       
     }
 
+    
+
     function hair() {
       var barbers = document.querySelector('.barbers')
       var divina = document.querySelector('.divina')
       var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
       
       var barberscard = document.getElementById('barberscard')
       var divinacard = document.getElementById('divinacard')
       var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
       
-      barbers.removeAttribute('id', 'select')
+
+      vivafloresta.removeAttribute('id', "select")
+      osabor.removeAttribute('id', 'select')
+      nail.removeAttribute('id', 'select')
       divina.removeAttribute('id', 'select')
+      barbers.removeAttribute('id', 'select')
       hair.setAttribute('id', 'select')
 
+      vivaflorestacard.style.display = 'none'
+      osaborcard.style.display = 'none'
+      nailcard.style.display = 'none'
       barberscard.style.display = 'none'
       divinacard.style.display = 'none'
       haircard.style.display = 'block'
@@ -183,19 +226,119 @@ const div = document.querySelector('#titulo');
       
     }
 
+    function nail() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+      var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
+      
 
-    function psec2() {
-      var sec1 = document.querySelector('.sec1')
-      var sec2 = document.querySelector('.sec2')
+      vivafloresta.removeAttribute('id', "select")
+      osabor.removeAttribute('id', 'select')
+      barbers.removeAttribute('id', 'select')
+      hair.removeAttribute('id', 'select')
+      divina.removeAttribute('id', 'select')
+      nail.setAttribute('id', 'select')
 
-      sec1.style.display = 'none'
-      sec2.style.display = 'grid'
+      vivaflorestacard.style.display = 'none'
+      osaborcard.style.display = 'none'
+      nailcard.style.display = 'block'
+      barberscard.style.display = 'none'
+      divinacard.style.display = 'none'
+      haircard.style.display = 'none'
+
+      nailcard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      nailcard.addEventListener('animationend', () => {
+        nailcard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
     }
 
-    function psec1() {
-      var sec1 = document.querySelector('.sec1')
-      var sec2 = document.querySelector('.sec2')
+    function osabor() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+      var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
+      
 
-      sec2.style.display = 'none'
-      sec1.style.display = 'grid'
+      vivafloresta.removeAttribute('id', "select")
+      barbers.removeAttribute('id', 'select')
+      nail.removeAttribute('id', 'select')
+      hair.removeAttribute('id', 'select')
+      divina.removeAttribute('id', 'select')
+      osabor.setAttribute('id', 'select')
+
+      vivaflorestacard.style.display = 'none'
+      osaborcard.style.display = 'block'
+      nailcard.style.display = 'none'
+      barberscard.style.display = 'none'
+      divinacard.style.display = 'none'
+      haircard.style.display = 'none'
+
+      osaborcard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      osaborcard.addEventListener('animationend', () => {
+        osaborcard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
+    }
+
+    function vivafloresta() {
+      var barbers = document.querySelector('.barbers')
+      var divina = document.querySelector('.divina')
+      var hair = document.querySelector('.hair')
+      var nail = document.querySelector('.nail')
+      var osabor = document.querySelector('.osabor')
+      var vivafloresta = document.querySelector('.vivafloresta')
+      
+      var barberscard = document.getElementById('barberscard')
+      var divinacard = document.getElementById('divinacard')
+      var haircard = document.getElementById('haircard')
+      var nailcard = document.getElementById('nailcard')
+      var osaborcard = document.getElementById('osaborcard')
+      var vivaflorestacard = document.getElementById('vivaflorestacard')
+      
+
+      barbers.removeAttribute('id', "select")
+      osabor.removeAttribute('id', 'select')
+      nail.removeAttribute('id', 'select')
+      hair.removeAttribute('id', 'select')
+      divina.removeAttribute('id', 'select')
+      vivafloresta.setAttribute('id', 'select')
+
+      vivaflorestacard.style.display = 'block'
+      osaborcard.style.display = 'none'
+      nailcard.style.display = 'none'
+      barberscard.style.display = 'none'
+      divinacard.style.display = 'none'
+      haircard.style.display = 'none'
+
+      vivaflorestacard.classList.add('animate__animated', 'animate__fadeInUpBig');
+
+      // Remove a animação após ela terminar (opcional, para reanimar no futuro)
+      vivaflorestacard.addEventListener('animationend', () => {
+        vivaflorestacard.classList.remove('animate__animated', 'animate__fadeInUpBig');})
+
+      
     }

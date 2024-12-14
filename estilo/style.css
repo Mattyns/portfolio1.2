@@ -144,6 +144,10 @@ main > section > p {
     
 }
 
+.desc-in {
+    font-family: var(--font2);
+}
+
 
 
 
@@ -153,6 +157,7 @@ main > section > p {
     width: 90vw;
     margin: 0px auto;
     margin-top: 30px;
+    margin-bottom: 50px;
     border-radius: 20px;
     padding: 10px;
     height: max-content;
@@ -185,6 +190,10 @@ main > section > p {
     border: 2px solid black;
     background-color: #ffffff;
     border-radius: 10px;
+}
+
+#incom2 {
+    display: none;
 }
 
 #completo {
@@ -270,6 +279,7 @@ faça usando javascript
     border-radius: 20px;
     padding: 10px;
     
+    
 }
 
 #meusprojetos > h1 {
@@ -340,6 +350,7 @@ faça usando javascript
     width: 80%;
     border-radius: 20px 20px 20px 20px;
     padding-bottom: 10px;
+    margin: 20px auto;
 }
 
 .mostrarimg  img {
@@ -385,10 +396,14 @@ faça usando javascript
 
 #barberscard {
     display: block;
+    
+    
 }
 
 .mostrarimg > div {
     display: none;
+    margin: auto;
+    
 }
 
 
@@ -463,7 +478,7 @@ faça usando javascript
     width: 210px;
 }
 
-@media screen and (min-Width:845px) {
+@media screen and (min-Width:768px) {
 
     nav{
         background-color: rgba(0, 0, 0, 0.614);
@@ -497,12 +512,40 @@ faça usando javascript
         
     }
 
+    #menu3 {
+        width: fit-content;
+        display: flex;
+        border-radius: 50%;
+        padding: 0px 5px;
+        margin-left: 50px;
+        float: right;
+        cursor: pointer;
+        
+    }
+
+    #menu3 > img {
+        width: 25px;
+        height: 25px;
+        margin-right: 2px;
+    }
+
+    #menu3 > p {
+        color: white;
+        font-family: var(--font5);
+    }
+
+    .desc-in {
+        width: 80%;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
     #sobremim {
-        height: 300px;
+        height: fit-content;
     }
 
     #perfil {
-        width: 230px;
+        width: 180px;
         padding: 5px;
         float: right;
         border: 2px solid black;
@@ -518,8 +561,27 @@ faça usando javascript
         text-align: center;
     }
 
+    #incom {
+        display: none;
 
     }
+
+    #incom2 {
+        display: block;
+    }
+
+    .projs {
+        margin: auto;
+        
+       
+        text-align: center;
+        width: 70%;
+        
+    }
+
+        }
+
+        
 
 
 

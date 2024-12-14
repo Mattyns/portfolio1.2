@@ -29,6 +29,7 @@ function alternarback2 () {
 function verm() {
     var ver = document.getElementById('vermais')
     var incom = document.getElementById('incom')
+    var incom2 = document.getElementById('incom2')
     var completo = document.getElementById('completo')
     var vertext = document.getElementById('vertext')
     var arrowup = document.getElementById('arrowup')
@@ -36,6 +37,7 @@ function verm() {
     var sm = document.getElementById('sobremim')
 
 
+    incom2.style.display = 'none'
     incom.style.visibility = 'hidden'
     incom.style.padding = '0px'
     incom.style.margin= '0px'
@@ -54,6 +56,7 @@ function verm() {
 function vermenos() {
     var ver = document.getElementById('vermais')
     var incom = document.getElementById('incom')
+    var incom2 = document.getElementById('incom2')
     var completo = document.getElementById('completo')
     var vertext = document.getElementById('vertext')
     var arrowup = document.getElementById('arrowup')
@@ -69,6 +72,12 @@ function vermenos() {
     arrowup.style.display = 'none'
 
     ver.setAttribute('onclick', "verm()");
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+    incom2.style.display = 'block'
+    } else {
+      disp
+    }
 
 }
 

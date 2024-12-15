@@ -42,6 +42,7 @@ function verm() {
     incom.style.padding = '0px'
     incom.style.margin= '0px'
     incom.style.height = '0px'
+    completo.style.display = 'block'
     completo.style.visibility = 'visible'
     completo.style.height = 'fit-content'
     vertext.innerText = 'VER MENOS'
@@ -65,6 +66,7 @@ function vermenos() {
     incom.style.visibility = 'visible'
     incom.style.height = 'fit-content'
     incom.style.padding = '5px'
+    completo.style.display = 'none'
     completo.style.visibility = 'hidden'
     completo.style.height = '0px'
     vertext.innerText = 'VER MAIS'
@@ -75,8 +77,11 @@ function vermenos() {
 
     if (window.matchMedia("(min-width: 768px)").matches) {
     incom2.style.display = 'block'
-    } else {
-      disp
+    }  if (window.matchMedia("(min-width: 1024px)").matches) {
+      incom2.style.display = 'none'
+      
+      completo.style.visibility = 'visible'
+      completo.style.height = 'fit-content'
     }
 
 }

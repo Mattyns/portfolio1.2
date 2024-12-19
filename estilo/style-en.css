@@ -1,0 +1,43 @@
+#vermais-en {
+    text-align: center;
+    background-color: rgb(116, 82, 9);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    display: grid;
+    
+    
+}
+
+#vermais-en > p {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    height: fit-content;
+    font-family: var(--font5);
+    
+    
+}
+
+#vermais-en > i {
+     color: white;
+     
+     
+     
+}
+
+#arrowup {
+    display: none;
+}
+
+#vermais-en:hover {
+    background-color: rgb(79, 56, 6);
+}
+
+#vermais-en:hover > i {
+    animation: headShake 2s ease;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+    
+}

@@ -689,7 +689,20 @@ faça usando javascript
         display: none;
     }
 
+    #vermais-en {
+        display: none;
+    }
+
+    .idioma {
+        margin-right: 10px;
+    }
     
-    
+    .idioma p {
+        font-size: 0.7em;
+        display: flex;
+        position: relative;
+        align-items: center;
+        align-self: center;
+    }
     
 }

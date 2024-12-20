@@ -407,6 +407,10 @@ faça usando javascript
     
 }
 
+.mostrarimg a {
+    text-decoration: none;
+}
+
 #verdemo {
     width: fit-content;
     background-color: rgba(220, 220, 220, 0.585);

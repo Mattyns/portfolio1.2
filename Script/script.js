@@ -26,31 +26,107 @@ function alternarback2 () {
 
 // função de ver mais no perfil
 
+const ver = document.querySelector('#vermais');
+const vertext = document.querySelector('#vertext');
+const arrowdown = document.querySelector('#arrowdown');
+const arrowup = document.querySelector('#arrowup');
+
+
+function updateDivOnResize() {
+  // Adiciona o atributo onclick
+  ver.setAttribute('onclick', 'verm()');
+
+  // Atualiza o texto interno da div
+  vertext.innerText = 'VER MAIS';
+  arrowdown.style.display = 'block'
+  arrowup.style.display = 'none'
+}
+
+// Atualiza ao carregar a página
+updateDivOnResize();
+
+// Atualiza toda vez que a janela for redimensionada
+window.addEventListener('resize', updateDivOnResize);
+
+    const incom = document.querySelector('#incom');
+    const incom2 = document.querySelector('#incom2');
+    const completo = document.querySelector('#completo');
+    const completo2 = document.querySelector('#completo2');
+    const completo3 = document.querySelector('#completo3');
+    
+
+    function showDivBasedOnWindowSize() {
+      const width = window.innerWidth;
+
+      // Oculta todas as divs inicialmente
+      incom.style.display = 'none';
+      incom2.style.display = 'none';
+      completo.style.display = 'none';
+      completo2.style.display = 'none';
+      completo3.style.display = 'none';
+
+      // Mostra a div correspondente com base no tamanho da janela
+      if (width < 768) {
+        incom.style.display = 'block';
+        completo2.style.display = 'none'
+        completo3.style.display = 'none'
+      } else if (width >= 768 && width < 1024) {
+        incom2.style.display = 'block';
+        completo.style.display = 'none'
+        completo3.style.display = 'none'
+      } else {
+        completo3.style.display = 'block';
+        completo2.style.display = 'none'
+        completo.style.display = 'none'
+      }
+    }
+
+    // Executa a função ao carregar a página e ao redimensionar a janela
+    window.addEventListener('resize', showDivBasedOnWindowSize);
+    window.addEventListener('load', showDivBasedOnWindowSize);
+
 function verm() {
     var ver = document.getElementById('vermais')
     var incom = document.getElementById('incom')
     var incom2 = document.getElementById('incom2')
     var completo = document.getElementById('completo')
+    var completo2 = document.getElementById('completo2')
+    var completo3 = document.getElementById('completo3')
     var vertext = document.getElementById('vertext')
     var arrowup = document.getElementById('arrowup')
     var arrowdown = document.getElementById('arrowdown')
     var sm = document.getElementById('sobremim')
 
 
-    incom2.style.display = 'none'
-    incom.style.visibility = 'hidden'
-    incom.style.padding = '0px'
-    incom.style.margin= '0px'
-    incom.style.height = '0px'
-    completo.style.display = 'block'
-    completo.style.visibility = 'visible'
-    completo.style.height = 'fit-content'
     vertext.innerText = 'VER MENOS'
     arrowdown.style.display = 'none'
     arrowup.style.display = 'block'
     
 
     ver.setAttribute('onclick', "vermenos()");
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      incom2.style.display = 'none'
+      incom.style.display = 'none'
+      completo2.style.display = 'none'
+      completo3.style.display = 'none'
+      completo.style.display = 'block'
+      
+    } if (window.matchMedia("(min-width: 768px)").matches) {
+      incom2.style.display = 'none'
+      incom.style.display = 'none'
+      completo.style.display = 'none'
+      completo3.style.display = 'none'
+      completo2.style.display = 'block'
+    } if (window.matchMedia("(min-width: 1024px)").matches) {
+      incom2.style.display = 'none'
+      incom.style.display = 'none'
+      completo.style.display = 'none'
+      completo2.style.display = 'none'
+      completo3.style.display = 'block'
+    } 
+    
+    
 
 }
 
@@ -59,30 +135,43 @@ function vermenos() {
     var incom = document.getElementById('incom')
     var incom2 = document.getElementById('incom2')
     var completo = document.getElementById('completo')
+    var completo2 = document.getElementById('completo2')
+    var completo3 = document.getElementById('completo3')
     var vertext = document.getElementById('vertext')
     var arrowup = document.getElementById('arrowup')
     var arrowdown = document.getElementById('arrowdown')
 
-    incom.style.visibility = 'visible'
-    incom.style.height = 'fit-content'
-    incom.style.padding = '5px'
-    completo.style.display = 'none'
-    completo.style.visibility = 'hidden'
-    completo.style.height = '0px'
+    
     vertext.innerText = 'VER MAIS'
     arrowdown.style.display = 'block'
     arrowup.style.display = 'none'
 
     ver.setAttribute('onclick', "verm()");
 
-    if (window.matchMedia("(min-width: 768px)").matches) {
-    incom2.style.display = 'block'
-    }  if (window.matchMedia("(min-width: 1024px)").matches) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
       incom2.style.display = 'none'
+      incom.style.display = 'block'
+      completo2.style.display = 'none'
+      completo3.style.display = 'none'
+      completo.style.display = 'none'
       
-      completo.style.visibility = 'visible'
-      completo.style.height = 'fit-content'
-    }
+    } if (window.matchMedia("(min-width: 768px)").matches) {
+      incom2.style.display = 'block'
+      incom.style.display = 'none'
+      completo.style.display = 'none'
+      completo3.style.display = 'none'
+      completo2.style.display = 'none'
+    } if (window.matchMedia("(min-width: 1024px)").matches) {
+      incom2.style.display = 'none'
+      incom.style.display = 'none'
+      completo.style.display = 'none'
+      completo2.style.display = 'none'
+      completo3.style.display = 'block'
+    } 
+
+    
+
+    
 
 }
 

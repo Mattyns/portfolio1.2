@@ -41,3 +41,9 @@
     animation-fill-mode: backwards;
     
 }
+
+@media screen and (min-Width:1024px) {
+    #vermais-en {
+        display: none;
+    }
+}

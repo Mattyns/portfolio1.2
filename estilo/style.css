@@ -110,7 +110,7 @@ i#menu2 {
     border-radius: 20px;
     padding: 10px 5px;
     margin-top: -10px;
-    margin-left: 50px;
+    margin-right: 10px;
     float: right;
     cursor: pointer;
     
@@ -226,11 +226,17 @@ main > section > p {
 }
 
 #completo {
-    visibility: hidden;
-    height: 1px;
-    
-    
+    display: none;
 }
+
+#completo2 {
+    display: none;
+}
+
+#completo3 {
+    display: none;
+}
+
 
 #vermais {
     text-align: center;
@@ -630,6 +636,18 @@ faça usando javascript
         display: block;
     }
 
+    #completo {
+        display: none;
+    }
+
+    #completo2 {
+        display: none;
+    }
+
+    #completo3 {
+        display: none;
+    }
+
     .projs {
         margin: auto;
         
@@ -681,12 +699,17 @@ faça usando javascript
         display: none;
     }
 
-    p#completo {
-        visibility: visible;
-        height: fit-content;
-        display: block !important; 
-        text-align: left;
+    #completo {
+        display: none;
         
+    }
+
+    #completo {
+        display: none;
+    }
+
+    #completo {
+        display: block;
     }
 
     #vermais {
